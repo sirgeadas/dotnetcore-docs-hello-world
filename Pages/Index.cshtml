@@ -1,12 +1,68 @@
-﻿@page
-@model IndexModel
-@{    
-    ViewData["Title"] = "Home page";
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Linktree</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
 
-<div class="text-center">
-    <h1 class="display-4">Filipe Geadas</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <hr />
-    <div>Host operating system: @Model.OSVersion</div>
-</div>
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+        }
+
+        .username {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .links {
+            margin: 20px 0;
+        }
+
+        .link-item {
+            background-color: #3498db;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .link-item:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="profile-picture" src="your-profile-image.jpg" alt="Your Profile Picture">
+        <div class="username">Your Name</div>
+        <div class="links">
+            <a class="link-item" href="https://example.com">Link 1</a>
+            <a class="link-item" href="https://example.com">Link 2</a>
+            <a class="link-item" href="https://example.com">Link 3</a>
+        </div>
+    </div>
+</body>
+</html>
